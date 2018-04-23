@@ -23,7 +23,4 @@ const server = http.createServer(app).listen(PORT, () => {
 });
 const io = socket.listen(server);
 
-require("./routes/nws")(app);
-require('./sockets/main_socket')(io)
-
 module.exports = app;
